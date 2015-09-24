@@ -1,0 +1,40 @@
+{
+  "type" : "jdbc",
+  "jdbc" : {
+    "index" : "current-auctions",
+    "max_bulk_actions" : "50000",
+    "flush_interval" : "5m",
+    "connection_properties" : {
+      "useFetchSizeWithLongColumn" : "false",
+      "oracle" : {
+        "net" : {
+          "CONNECT_TIMEOUT" : "10000"
+        },
+        "jdbc" : {
+          "TcpNoDelay" : "false",
+          "ReadTimeout" : "50000"
+        }
+      }
+    },
+    "url" : "jdbc:oracle:thin:@//localhost:1521/BVAPRO_TAF",
+    "threadpoolsize" : "1",
+    "sql" : [ {
+      "statement" : "sql/current-lots.sql"
+    } ],
+    "resultset_concurrency" : "CONCUR_READ_ONLY",
+    "password" : "infonl4bva",
+    "elasticsearch" : {
+      "host" : "127.0.0.1",
+      "port" : "9300",
+      "cluster" : "elasticsearch_mats.svefors"
+    },
+    "max_concurrent_bulk_requests" : "0",
+    "statefile" : "current-lots-state-prod.json",
+    "metrics" : {
+      "lastexecutionstart" : "2015-09-23T14:28:31.215Z",
+      "lastexecutionend" : "2015-09-23T14:32:28.783Z",
+      "counter" : "42"
+    },
+    "user" : "info_nl"
+  }
+}

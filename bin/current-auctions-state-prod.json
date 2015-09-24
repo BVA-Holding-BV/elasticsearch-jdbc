@@ -1,0 +1,38 @@
+{
+  "type" : "jdbc",
+  "jdbc" : {
+    "password" : "infonl4bva",
+    "elasticsearch" : {
+      "host" : "127.0.0.1",
+      "port" : "9300",
+      "cluster" : "elasticsearch_mats.svefors"
+    },
+    "max_concurrent_bulk_requests" : "0",
+    "index" : "current-auctions",
+    "statefile" : "current-auctions-state-prod.json",
+    "max_bulk_actions" : "20000",
+    "interval" : "5m",
+    "metrics" : {
+      "lastexecutionstart" : "2015-09-23T13:58:26.851Z",
+      "lastexecutionend" : "2015-09-23T14:01:56.268Z",
+      "counter" : "40"
+    },
+    "user" : "info_nl",
+    "connection_properties" : {
+      "useFetchSizeWithLongColumn" : "false",
+      "oracle" : {
+        "net" : {
+          "CONNECT_TIMEOUT" : "10000"
+        },
+        "jdbc" : {
+          "TcpNoDelay" : "false",
+          "ReadTimeout" : "50000"
+        }
+      }
+    },
+    "url" : "jdbc:oracle:thin:@//localhost:1521/BVAPRO_TAF",
+    "sql" : [ {
+      "statement" : "sql/current-auctions.sql"
+    } ]
+  }
+}
