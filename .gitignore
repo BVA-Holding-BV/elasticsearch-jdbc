@@ -10,3 +10,5 @@
 /.project
 *~
 lib
+jdbc.log
+hs_err_pid*
