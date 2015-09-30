@@ -3,20 +3,20 @@
   "jdbc" : {
     "password" : "infonl4bva",
     "elasticsearch" : {
-      "host" : "127.0.0.1",
+      "host" : "ela01d.bva.nu",
       "port" : "9300",
-      "cluster" : "elasticsearch_mats.svefors"
+      "cluster" : "auction-query"
     },
-    "max_concurrent_bulk_requests" : "0",
+    "max_concurrent_bulk_requests" : "4",
     "index" : "current-auctions",
     "statefile" : "current-auctions-state-prod.json",
-    "max_bulk_actions" : "20000",
-    "interval" : "5m",
+    "max_bulk_actions" : "20",
     "metrics" : {
-      "lastexecutionstart" : "2015-09-23T13:58:26.851Z",
-      "lastexecutionend" : "2015-09-23T14:01:56.268Z",
-      "counter" : "40"
+      "lastexecutionstart" : "2015-09-30T09:27:25.155Z",
+      "lastexecutionend" : "2015-09-30T09:31:42.061Z",
+      "counter" : "44"
     },
+    "flush_interval" : "30s",
     "user" : "info_nl",
     "connection_properties" : {
       "useFetchSizeWithLongColumn" : "false",

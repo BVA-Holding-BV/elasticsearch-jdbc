@@ -3,18 +3,18 @@
   "jdbc" : {
     "password" : "hPd59YdNnwrED4m",
     "elasticsearch" : {
-      "host" : "127.0.0.1",
-      "port" : "9300",
-      "cluster" : "elasticsearch_mats.svefors"
+      "host" : "mesos03.bva.nu",
+      "port" : "31001",
+      "cluster" : "mesos-ha"
     },
     "max_concurrent_bulk_requests" : "10",
     "index" : "current-auctions",
     "statefile" : "current-auctions-state.json",
     "max_bulk_actions" : "20000",
     "metrics" : {
-      "lastexecutionstart" : "2015-09-23T12:22:04.504Z",
-      "lastexecutionend" : "2015-09-23T12:22:07.545Z",
-      "counter" : "2830"
+      "lastexecutionstart" : "2015-09-30T09:03:47.830Z",
+      "lastexecutionend" : "2015-09-30T09:03:48.210Z",
+      "counter" : "2833"
     },
     "user" : "bva_readonly",
     "connection_properties" : {

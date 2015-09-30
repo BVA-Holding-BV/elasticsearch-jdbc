@@ -24,4 +24,4 @@ FROM bva.auctions a, bva.lots l, bva.locations loc
 WHERE
 l.auction_id = a.id
 AND l.location_id = loc.id
-AND a.LOTMAXDATE > (CURRENT_TIMESTAMP(0) - interval '15' minute)
+AND a.LOTMAXDATE > (CURRENT_TIMESTAMP(0) - interval '15' MINUTE)
