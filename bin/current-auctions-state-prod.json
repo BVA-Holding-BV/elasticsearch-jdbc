@@ -8,13 +8,13 @@
       "cluster" : "auction-query"
     },
     "max_concurrent_bulk_requests" : "4",
-    "index" : "current-auctions",
+    "index" : "current-auctions2",
     "statefile" : "current-auctions-state-prod.json",
     "max_bulk_actions" : "20",
     "metrics" : {
-      "lastexecutionstart" : "2015-09-30T09:27:25.155Z",
-      "lastexecutionend" : "2015-09-30T09:31:42.061Z",
-      "counter" : "44"
+      "lastexecutionstart" : "2015-10-19T13:24:55.507Z",
+      "lastexecutionend" : "2015-10-19T13:29:21.026Z",
+      "counter" : "56"
     },
     "flush_interval" : "30s",
     "user" : "info_nl",

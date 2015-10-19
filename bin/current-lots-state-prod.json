@@ -1,7 +1,7 @@
 {
   "type" : "jdbc",
   "jdbc" : {
-    "index" : "current-auctions",
+    "index" : "current-auctions2",
     "max_bulk_actions" : "5000",
     "flush_interval" : "5s",
     "connection_properties" : {
@@ -31,9 +31,9 @@
     "max_concurrent_bulk_requests" : "4",
     "statefile" : "current-lots-state-prod.json",
     "metrics" : {
-      "lastexecutionstart" : "2015-09-30T09:29:39.093Z",
-      "lastexecutionend" : "2015-09-30T09:34:01.635Z",
-      "counter" : "43"
+      "lastexecutionstart" : "2015-10-13T15:18:14.065Z",
+      "lastexecutionend" : "2015-10-13T15:21:34.197Z",
+      "counter" : "45"
     },
     "user" : "info_nl"
   }
